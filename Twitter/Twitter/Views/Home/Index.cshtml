@@ -1,0 +1,65 @@
+﻿@model TweetsViewModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+
+    <table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Tweets.FirstOrDefault().User.Handle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tweets.FirstOrDefault().Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tweets.FirstOrDefault().Text)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tweets.FirstOrDefault().Likes)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tweets.FirstOrDefault().Comments)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Tweets)
+        {
+            <tr>
+                <td>
+                    <a asp-action="ByHandle" asp-route-id="@item.User.Id">
+                        @Html.DisplayFor(modelItem => item.User.Handle)
+                    </a>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Date)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Text)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Likes)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Comments)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+</div>

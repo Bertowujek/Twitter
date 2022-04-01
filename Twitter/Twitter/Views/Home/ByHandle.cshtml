@@ -1,0 +1,54 @@
+﻿@model TweetsHandleModel
+
+
+@{
+    ViewData["Title"] = "By Handle";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to detail your site's privacy policy.</p>
+
+ <table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TweetsByHandle.FirstOrDefault().User.Handle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TweetsByHandle.FirstOrDefault().Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TweetsByHandle.FirstOrDefault().Text)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TweetsByHandle.FirstOrDefault().Likes)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TweetsByHandle.FirstOrDefault().Comments)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.TweetsByHandle)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.User.Handle)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Date)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Text)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Likes)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Comments)
+                </td>             
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,317 @@
+﻿++Solução 'Twitter' ‎(1 de 1 projeto)
+i:{00000000-0000-0000-0000-000000000000}:Twitter.sln
+++Twitter
+i:{00000000-0000-0000-0000-000000000000}:Twitter
+++Connected Services 
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:>539
+++Dependências
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:>538
+++Properties
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\properties\
+++wwwroot
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\
+++css
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\css\
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\bootstrap\dist\css\
+++images
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\images\
+++descarregar.jfif
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\images\descarregar.jfif
+++tigre.jfif
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\images\tigre.jfif
+++user.png
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\images\user.png
+++js
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\js\
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\bootstrap\dist\js\
+++lib
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\
+++favicon.ico
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\favicon.ico
+++Controllers
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\controllers\
+++HomeController.cs
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\controllers\homecontroller.cs
+++TestController.cs
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\controllers\testcontroller.cs
+++TweetsController.cs
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\controllers\tweetscontroller.cs
+++UsersController.cs
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\controllers\userscontroller.cs
+++Data
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\data\
+++TweetDBInitializer.cs
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\data\tweetdbinitializer.cs
+++TweetExtension.cs
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\data\tweetextension.cs
+++UserDbInitializer.cs
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\data\userdbinitializer.cs
+++UserExtension.cs
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\data\userextension.cs
+++Models
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\models\
+++ErrorViewModel.cs
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\models\errorviewmodel.cs
+++ImageUploaded.cs
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\models\imageuploaded.cs
+++Tweet.cs
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\models\tweet.cs
+++TweetEditModel.cs
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\models\tweeteditmodel.cs
+++TweetsHandleModel.cs
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\models\tweetshandlemodel.cs
+++TweetsViewModel.cs
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\models\tweetsviewmodel.cs
+++TweetViewModel.cs
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\models\tweetviewmodel.cs
+++TwitterContext.cs
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\models\twittercontext.cs
+++User.cs
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\models\user.cs
+++UserViewModel.cs
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\models\userviewmodel.cs
+++Service
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\service\
+++IJWTService.cs
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\service\ijwtservice.cs
+++ITweetService.cs
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\service\itweetservice.cs
+++IUserService.cs
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\service\iuserservice.cs
+++JWTService.cs
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\service\jwtservice.cs
+++TweetService.cs
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\service\tweetservice.cs
+++UserService.cs
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\service\userservice.cs
+++Views
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\views\
+++Home
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\views\home\
+++AllTweets.cshtml
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\views\home\alltweets.cshtml
+++ByHandle.cshtml
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\views\home\byhandle.cshtml
+++Create.cshtml
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\views\home\create.cshtml
+++Create.cshtml.cs
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\views\home\create.cshtml.cs
+++Edit.cshtml
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\views\home\edit.cshtml
+++Image.cshtml
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\views\home\image.cshtml
+++Index.cshtml
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\views\home\index.cshtml
+++Login.cshtml
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\views\home\login.cshtml
+++Logout.cshtml
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\views\home\logout.cshtml
+++Privacy.cshtml
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\views\home\privacy.cshtml
+++SignUp.cshtml
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\views\home\signup.cshtml
+++Tweet.cshtml
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\views\home\tweet.cshtml
+++Upload.cshtml
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\views\home\upload.cshtml
+++Shared
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\views\shared\
+++_Layout.cshtml
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\views\shared\_layout.cshtml
+++_Layout.cshtml.css
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\views\shared\_layout.cshtml.css
+++_ValidationScriptsPartial.cshtml
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\views\shared\_validationscriptspartial.cshtml
+++Error.cshtml
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\views\shared\error.cshtml
+++_ViewImports.cshtml
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\views\_viewimports.cshtml
+++_ViewStart.cshtml
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\views\_viewstart.cshtml
+++appsettings.Development.json
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\appsettings.development.json
+++appsettings.json
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\appsettings.json
+++Program.cs
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\program.cs
+++Nenhuma dependência de serviço descoberta
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:>540
+++Analisadores
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:analisadores
+++Estruturas
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:estruturas
+++Pacotes
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:pacotes
+++launchSettings.json
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\properties\launchsettings.json
+++site.css
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\css\site.css
+++site.js
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\js\site.js
+++bootstrap
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\bootstrap\
+++jquery
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\jquery\
+++jquery-validation
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\jquery-validation\
+++jquery-validation-unobtrusive
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\jquery-validation-unobtrusive\
+++Microsoft.AspNetCore.Analyzers
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.App.Analyzers
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+++Microsoft.AspNetCore.App.CodeFixes
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.AspNetCore.Razor.Internal.SourceGenerator.Transport
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.internal.sourcegenerator.transport.dll
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.3\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+++Microsoft.Extensions.Logging.Generators
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+++Microsoft.NET.Sdk.Razor.SourceGenerators
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+++System.Text.Json.SourceGeneration
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.0\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+++Microsoft.AspNetCore.App
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\microsoft.aspnetcore.app
+++Microsoft.NETCore.App
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\microsoft.netcore.app
+++Microsoft.AspNetCore.Authentication (2.2.0)
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:>561
+++Microsoft.AspNetCore.Authentication.JwtBearer (6.0.3)
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:>564
+++Microsoft.AspNetCore.Mvc.NewtonsoftJson (6.0.3)
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:>563
+++Microsoft.EntityFrameworkCore (6.0.3)
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:>558
+++Microsoft.EntityFrameworkCore.SqlServer (6.0.3)
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:>559
+++MySql.EntityFrameworkCore (6.0.0)
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:>562
+++Swashbuckle.AspNetCore (6.3.0)
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:>560
+++dist
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\bootstrap\dist\
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\jquery\dist\
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\jquery-validation\dist\
+++LICENSE
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\bootstrap\license
+++LICENSE.txt
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\jquery\license.txt
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\jquery-validation-unobtrusive\license.txt
+++LICENSE.md
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\jquery-validation\license.md
+++jquery.validate.unobtrusive.js
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
+++jquery.validate.unobtrusive.min.js
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
+++jquery.js
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\jquery\dist\jquery.js
+++jquery.min.js
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\jquery\dist\jquery.min.js
+++jquery.min.map
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\jquery\dist\jquery.min.map
+++additional-methods.js
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\jquery-validation\dist\additional-methods.js
+++additional-methods.min.js
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+++jquery.validate.js
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+++jquery.validate.min.js
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+++bootstrap.css
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\bootstrap\dist\css\bootstrap.css
+++bootstrap.css.map
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+++bootstrap.min.css
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+++bootstrap.min.css.map
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+++bootstrap.rtl.css
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+++bootstrap.rtl.css.map
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+++bootstrap.rtl.min.css
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+++bootstrap.rtl.min.css.map
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+++bootstrap-grid.css
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+++bootstrap-grid.css.map
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+++bootstrap-grid.min.css
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+++bootstrap-grid.min.css.map
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+++bootstrap-grid.rtl.css
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+++bootstrap-grid.rtl.css.map
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+++bootstrap-grid.rtl.min.css
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+++bootstrap-grid.rtl.min.css.map
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+++bootstrap-reboot.css
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+++bootstrap-reboot.css.map
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+++bootstrap-reboot.min.css
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+++bootstrap-reboot.min.css.map
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+++bootstrap-reboot.rtl.css
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+++bootstrap-reboot.rtl.css.map
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+++bootstrap-reboot.rtl.min.css
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+++bootstrap-reboot.rtl.min.css.map
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+++bootstrap-utilities.css
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+++bootstrap-utilities.css.map
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+++bootstrap-utilities.min.css
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+++bootstrap-utilities.min.css.map
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+++bootstrap-utilities.rtl.css
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+++bootstrap-utilities.rtl.css.map
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+++bootstrap-utilities.rtl.min.css
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+++bootstrap-utilities.rtl.min.css.map
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+++bootstrap.bundle.js
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+++bootstrap.bundle.js.map
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+++bootstrap.bundle.min.js
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+++bootstrap.bundle.min.js.map
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+++bootstrap.esm.js
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+++bootstrap.esm.js.map
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+++bootstrap.esm.min.js
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+++bootstrap.esm.min.js.map
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+++bootstrap.js
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\bootstrap\dist\js\bootstrap.js
+++bootstrap.js.map
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+++bootstrap.min.js
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+++bootstrap.min.js.map
+i:{d64b1e33-5820-4ad1-bd8b-be113ba5f2ba}:c:\users\joao_\onedrive\ambiente de trabalho\twitter\twitter\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
