@@ -57,6 +57,7 @@ namespace Twitter.Controllers
 
       
         [HttpPost]
+                                                                //Perceber o async
         public async Task<IActionResult> Create(TweetViewModel tweet)
         {
 

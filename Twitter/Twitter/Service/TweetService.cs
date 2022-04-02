@@ -123,5 +123,11 @@ namespace Twitter.Service
 
             context.SaveChanges();
         }
+
+
+        public Tweet LikeUpdateByUser(User user)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

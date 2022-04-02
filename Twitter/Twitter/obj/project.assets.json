@@ -3054,19 +3054,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Huawei\\.nuget\\packages\\": {}
+    "C:\\Users\\Utilizador\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Twitter\\Twitter\\Twitter.csproj",
+      "projectUniqueName": "C:\\Users\\Utilizador\\OneDrive\\Mestrado\\Requalificar +Digital\\GitHub\\Projeto Final - Twitter\\Twitter\\Twitter\\Twitter.csproj",
       "projectName": "Twitter",
-      "projectPath": "E:\\Twitter\\Twitter\\Twitter.csproj",
-      "packagesPath": "C:\\Users\\Huawei\\.nuget\\packages\\",
-      "outputPath": "E:\\Twitter\\Twitter\\obj\\",
+      "projectPath": "C:\\Users\\Utilizador\\OneDrive\\Mestrado\\Requalificar +Digital\\GitHub\\Projeto Final - Twitter\\Twitter\\Twitter\\Twitter.csproj",
+      "packagesPath": "C:\\Users\\Utilizador\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Utilizador\\OneDrive\\Mestrado\\Requalificar +Digital\\GitHub\\Projeto Final - Twitter\\Twitter\\Twitter\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Huawei\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Utilizador\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3139,7 +3139,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

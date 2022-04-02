@@ -1,0 +1,91 @@
+﻿
+/*
+ * Manage Likes
+The manage Likes endpoints enable you to like or unlike a specified Tweet on behalf of an authenticated account. 
+
+For this endpoint group, 
+there are two methods available POST and DELETE. 
+
+The POST method allows you to like a Tweet, and 
+The DELETE method will enable you to unlike a Tweet.
+*/
+
+======================================================================
+[x] Passo 1:
+IUserService : 3 ações:
+
+1º Dar like no tweet (Post -> Create)
+        public abstract User LikeNewLikeByHandle(string Handle);
+
+2º Ver like nos tweets (Get -> Read) - Tanto os seus como dos outros
+        public abstract User GetLikedTweetsByHandle(string Handle);
+        
+        //public abstract User LikeGetLikingUsersByHandle(string Handle);
+
+3º Removar Like (Unlike) (Delete)
+        public abstract User LikeUnlikeByHandle(string Handle);
+
+======================================================================
+[x] Passo 2:
+Implementar as ações na classe UserService
+        Adicionar o token nas classes
+
+
+======================================================================
+[ ] Passo 3:
+ITweetService: Incrementar o número de likes (Função Bool (?)
+
+         |Atenção: Nº Likes por User é 1    |
+         |                                  |
+         |If Click = Like, Like = true      |
+         |LikedTweets = LikedTweets +1;     |
+         |                                  |
+         |                                  |
+         |If NewClick = Like, Like = false  |
+         |likedTweets = LikedTweets -1;     |
+         |__________________________________|
+
+Put -> Update
+        public abstract Tweet LikeUpdateByUser(int Id);
+                       likedTweets = 0;
+                       getLikeById.Max = 1;
+                       getUnlikeById.Max = 1;
+
+Começa com 0 e limite por user é 1
+Se User dá like,
+        getLikeById = likedTweets +1:
+        likedTweets++ ;
+
+Se User já tiver dado Like
+    If (getLikeById = 1)
+Pode dar Unlike
+        getUnLikeById = likedTweets -1;
+    Else If
+        getLikeById;
+
+======================================================================
+
+O que fiz:
+
+            int likedTweets = 0;
+            int getLikeById = likedTweets;
+            int getUnLikeById = likedTweets;
+
+            while (likedTweets >= 0)
+            {
+                likedTweets = likedTweets + getLikeById - getUnLikeById;
+                Console.WriteLine(likedTweets);
+
+                getLikeById = Math.Max(likedTweets-1, likedTweets);
+                getUnLikeById = Math.Max(likedTweets+1, likedTweets);
+
+                likedTweets++;
+
+            }
+            Console.WriteLine(likedTweets);
+
+            //Console.WriteLine(likedTweets); = 0
+
+            //Falta agora associar ao Token penso eu:
+            //getLikeById = Token && [Max.Length=1], algo assim, perguntar ao prof
+
