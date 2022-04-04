@@ -8,8 +8,6 @@ namespace Twitter.Service
 
         public abstract IEnumerable <Tweet> GetByUser(int id);
 
-        //public abstract Tweet? GetByUser(User user);
-
         public abstract Tweet? GetById(int Id);
 
         public abstract Tweet Create(Tweet newTweet);
@@ -20,8 +18,8 @@ namespace Twitter.Service
 
         public abstract Tweet Update(TweetEditModel tweet);
 
-        public abstract Tweet Like(int Id);
-
+        //public abstract Tweet Like(TweetViewModel model); //??? UserId - O que mudou?
+        public abstract void LikeById(int Id);
         public abstract Tweet Comment(TweetViewModel model);
 
 

@@ -43,7 +43,7 @@ namespace Twitter.Service
         public IEnumerable<Tweet> GetAll()
         {
             var tweets = context.Tweets.Include(p => p.User);
-           // var tweets = context.Tweets;
+            // var tweets = context.Tweets;
             return tweets;
         }
 
@@ -73,7 +73,7 @@ namespace Twitter.Service
         public Tweet Update(int Id, Tweet tweet)
         {
             //tweet.User.Id !== jwt.id
-               //return error
+            //return error
             var tweetToUpdate = context.Tweets.Find(Id);
             if (tweetToUpdate is null)
             {
@@ -93,21 +93,15 @@ namespace Twitter.Service
             }
         }
 
-        public Tweet Like(int Id)
+        public void LikeById(int Id)
         {
-            //tweet.User.Id !== jwt.id
-            //return error
-            var tweetToUpdate = context.Tweets.Find(Id);
-            if (tweetToUpdate is null)
+            var tweetLike = context.Tweets.Find(Id);
+            while (tweetLike is not null && tweetLike.Likes >= 0) //while porque se o tweet for apagado, deixa de ser possível dar um like
+
             {
-                throw new NullReferenceException("Tweet does not exist");
-            }
-            else
-            {               
-                tweetToUpdate.Likes++;
-                
+                context.Tweets.Add(tweetLike);
+                tweetLike.Likes++;
                 context.SaveChanges();
-                return tweetToUpdate;
             }
         }
 
@@ -161,3 +155,21 @@ namespace Twitter.Service
         }
     }
 }
+
+//public Tweet Like(int Id)
+//{
+//    //tweet.User.Id !== jwt.id
+//    //tweetToUpdate = context.Tweets.Include(t => t.User.Id).Where(t => t.User.Id == model.UserId);
+
+//    var tweetLike = context.Tweets.Find(Id);
+//    //tweetToUpdate = context.Tweets.Include(tweet.).SingleOrDefault(b => b.User == UserId);
+
+//    while (tweetLike is not null && tweetLike.Likes >= 0 //while porque se o tweet for apagado, deixa de ser possível dar um like
+
+//    {
+//        context.Tweets.Add(tweetLike);
+//        tweetLike.Likes++;
+//        context.SaveChanges();
+//    }
+//    return tweetLike;
+//}

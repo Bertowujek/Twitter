@@ -356,7 +356,7 @@ namespace Twitter.Controllers
 
         public IActionResult Like(int id)
         {
-            serviceT.Like(id);
+            serviceT.LikeById(id);
             return (RedirectToAction("Index"));
         }
 
