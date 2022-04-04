@@ -13,15 +13,15 @@ namespace Twitter.Service
         }
 
         // Função que procura o usuário por handle & passworld => Login.
-        public User Get(string Handle, string password)
+        public User Get(string Handle, string password) 
         {
             var user = context.Users.FirstOrDefault(x => x.Handle == Handle && x.Password == password);
             return user;
         }
 
-        public User? FindByName(string userName)
+        public User? FindByName(string name)
         {
-            return context.Users.FirstOrDefault(x => x.Name == userName);
+            return context.Users.FirstOrDefault(x => x.Name == name);
         }
 
         public User Create(User newUser)
@@ -70,7 +70,7 @@ namespace Twitter.Service
             }
             else
             {
-
+                
                 userToUpdate.Name = user.Name;
                 userToUpdate.Email = user.Email;
                 userToUpdate.Password = user.Password;
@@ -89,27 +89,11 @@ namespace Twitter.Service
                 throw new NullReferenceException("User does not exist");
             }
             else
-            {
+            {    
                 userToUpdate.Avatar = fileName;
                 context.SaveChanges();
                 return userToUpdate;
             }
         }
-
-        //Likes
-        public void LikeNewLikeByHandle(string Handle)
-        {
-            throw new NotImplementedException();
+            }
         }
-
-        public void LikeGetLikingUsersByHandle(string Handle)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void LikeUnlikeByHandle(string Handle)
-        {
-            throw new NotImplementedException();
-        }
-    }
-}

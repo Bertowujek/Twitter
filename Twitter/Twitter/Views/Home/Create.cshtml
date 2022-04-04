@@ -3,6 +3,44 @@
     ViewData["Title"] = "Create";
 }
 <h1>@ViewData["Title"]</h1>
+<br />
+<br />
+<h4>Tweet</h4>
+@*<h4>@Model.UserId</h4>*@
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Text" class="control-label"></label>
+                <input asp-for="Text" class="form-control" />
+                <span asp-validation-for="Text" class="text-danger"></span>
+            </div>
+             <div class="form-group">
+                <label asp-for="UserId" hidden class="control-label"></label>
+                <input asp-for="UserId" hidden class="form-control" />
+                <span asp-validation-for="UserId" hidden class="text-danger"></span>
+            </div>
+            <br />
+            <br />
+            @*<a asp-action="Create" asp-route-id="@Model.UserId">Create</a> |*@
+            <div class="form-group">
+                <input type="submit" value="Create" @*asp-route-id="@User"*@ class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@*@model TweetViewModel
+@{
+    ViewData["Title"] = "Create";
+}
+<h1>@ViewData["Title"]</h1>
 
 <h4>Tweet</h4>
 <hr />
@@ -30,4 +68,39 @@
 
 <div>
     <a asp-action="Index">Back to List</a>
+</div>*@
+
+@*@model TweetViewModel
+@{
+    ViewData["Title"] = "Create";
+}
+<h1>@ViewData["Title"]</h1>
+
+<h4>Tweet</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Text" class="control-label"></label>
+                <input asp-for="Text" class="form-control" />
+                <span asp-validation-for="Text" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UserId" hidden class="control-label"></label>
+                <input asp-for="UserId" hidden class="form-control" />
+                <span asp-validation-for="UserId" hidden class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
 </div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+*@

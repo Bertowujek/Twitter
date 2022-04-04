@@ -15,7 +15,7 @@
 
         public string Email { get; set; }
 
-        public string Avatar { get; set; } = Path.GetFileName("/images/user.png");
+        public string Avatar { get; set; }// = Path.GetFileName("/images/user.png");
 
     }
 }

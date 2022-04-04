@@ -6,7 +6,7 @@ namespace Twitter.Service
     {
         public abstract IEnumerable<Tweet> GetAll();
 
-        public abstract IEnumerable <Tweet> GetByUser(int id); //id ? ou Id?
+        public abstract IEnumerable <Tweet> GetByUser(int id);
 
         //public abstract Tweet? GetByUser(User user);
 
@@ -20,6 +20,10 @@ namespace Twitter.Service
 
         public abstract Tweet Update(TweetEditModel tweet);
 
-        public abstract Tweet LikeUpdateByUser(User user);
+        public abstract Tweet Like(int Id);
+
+        public abstract Tweet Comment(TweetViewModel model);
+
+
     }
 }

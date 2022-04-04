@@ -7,6 +7,8 @@
     
         public  int UserId { get; set; }
 
-        //public int TweetLikes { get; set; }
+        public string Comment { get; set; }
+
+        public int Id { get; set; }
     }
 }

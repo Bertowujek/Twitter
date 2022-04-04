@@ -52,9 +52,10 @@
                     @Html.DisplayFor(modelItem => item.Comments)
                 </td>
                 <td>
-                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    <a asp-action="Like" asp-route-id="@item.Id">Like</a> |
+                    <a asp-action="Tweet" asp-route-id="@item.Id">Comment</a> |
+                    @*<a asp-action="Comment" asp-route-id="@item.Id">Comment</a> |*@
+                    <a asp-action="Retweet" asp-route-id="@item.Id">Retweet</a>
                 </td>
             </tr>
         }

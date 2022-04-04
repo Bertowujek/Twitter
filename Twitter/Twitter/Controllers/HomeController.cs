@@ -39,7 +39,71 @@ namespace Twitter.Controllers
             return View(new TweetsHandleModel { TweetsByHandle = tweets });
         }
 
-     
+        public IActionResult Tweet(int Id)
+        {
+            var tweet = serviceT.GetById(Id);
+            //return View(new TweetsHandleModel { TweetsByHandle = (IEnumerable<Tweet>)tweets });
+            return View(new TweetViewModel { Text = tweet.Text, /*Comment = tweet.Comments,*/ Id = tweet.Id });
+            //Vai retornar a view Tweet (mais parecida ao nome da acção)
+        }
+
+        [HttpPost]
+        public IActionResult Comment(TweetViewModel model)
+        {
+            var comment = serviceT.Comment(model);
+            //return View(new TweetsHandleModel { TweetsByHandle = (IEnumerable<Tweet>)tweets });
+            return (RedirectToAction("Index"));
+        }
+
+        // RETWEET  RETWEET  RETWEET  RETWEET  RETWEET  RETWEET  RETWEET  RETWEET  
+
+        public IActionResult ReTweet(int Id)
+        {
+            string token = HttpContext.Session.GetString("Token");
+
+            if (token == null)
+            {
+                return (RedirectToAction("Login"));
+            }
+            else
+            {
+                //var token = HttpContext.Session.GetString("Token");
+                var id = tokenService.GetJWTTokenClaim(token);
+                var user = serviceU.GetById(Convert.ToInt32(id));
+                var tweet = serviceT.GetById(Id);          
+                return View(new TweetViewModel { Text = tweet.Text, UserId = user.Id, Id = tweet.Id });
+               
+            }
+            
+        }
+
+        [HttpPost]
+        public IActionResult RetweetC(TweetViewModel tweet)
+        {
+            //esta a dar erro na verificação do modelo
+            //if (ModelState.IsValid)
+            {
+
+                //var user = serviceU.GetById(tweet.UserId);               
+                var token = HttpContext.Session.GetString("Token");
+                var id = tokenService.GetJWTTokenClaim(token);
+                var user = serviceU.GetById(Convert.ToInt32(id));
+
+                var newTweet = serviceT.Create(new Tweet { Text = tweet.Text, Date = DateTime.Now, Likes = 0, Comments = "", User = user });
+                if (newTweet is not null)
+                    return RedirectToAction(nameof(Index));
+                else
+                    return RedirectToAction(nameof(Error));
+            }
+            //else
+            {
+                return RedirectToAction(nameof(Error));
+            }
+        }
+
+
+        // RETWEET  RETWEET  RETWEET  RETWEET  RETWEET  RETWEET  RETWEET  RETWEET  
+
         public IActionResult Create()
         {
             string token = HttpContext.Session.GetString("Token");
@@ -48,23 +112,29 @@ namespace Twitter.Controllers
             {
                 return (RedirectToAction("Login"));
             }
-            else 
+            else
             {
-                return View();
+                //return View();
+                var id = tokenService.GetJWTTokenClaim(token);
+                var user = serviceU.GetById(Convert.ToInt32(id));
+                //var tweet = serviceT.GetById(Id);
+                return View(new TweetViewModel {  UserId = user.Id });
             }
-           
+
         }
 
-      
+
         [HttpPost]
-                                                                //Perceber o async
         public async Task<IActionResult> Create(TweetViewModel tweet)
         {
-
-            if (ModelState.IsValid)
+            //esta a dar erro na verificação do modelo
+            //if (ModelState.IsValid)
             {
 
-                var user = serviceU.GetById(tweet.UserId);
+                var token = HttpContext.Session.GetString("Token");
+                var id = tokenService.GetJWTTokenClaim(token);
+                var user = serviceU.GetById(Convert.ToInt32(id));
+                //var user = serviceU.GetById(tweet.UserId);
 
                 var newTweet = serviceT.Create(new Tweet { Text = tweet.Text, Date = DateTime.Now, Likes = 0, Comments = "", User = user });
                 if (newTweet is not null)
@@ -72,7 +142,7 @@ namespace Twitter.Controllers
                 else
                     return RedirectToAction(nameof(Error));
             }
-            else
+            //else
             {
                 return RedirectToAction(nameof(Error));
             }
@@ -118,7 +188,7 @@ namespace Twitter.Controllers
                 var newTweet = serviceT.Update(tweet);
                 
                 if (newTweet is not null)
-                    return RedirectToAction(nameof(Index)); //redirect para a view index
+                    return RedirectToAction(nameof(Profile)); //redirect para a view index
                 else
                     return RedirectToAction(nameof(Error)); //redirect para a view de erro
             }
@@ -190,7 +260,7 @@ namespace Twitter.Controllers
                 if (tweet is not null)
                 {
                     serviceT.DeleteById(Id);
-                    return RedirectToAction(nameof(Index));
+                    return RedirectToAction(nameof(Profile));
                 }
                 else
                 {
@@ -201,6 +271,19 @@ namespace Twitter.Controllers
             
 
         }
+
+        public IActionResult Profile()
+        {
+            var token = HttpContext.Session.GetString("Token");
+            var id = tokenService.GetJWTTokenClaim(token);
+            var user = serviceU.GetById(Convert.ToInt32(id));
+            var userViewModel = new UserViewModel { Handle = user.Handle, Id = user.Id, Name = user.Name, Email = user.Email, Avatar = user.Avatar };
+            ViewBag.UserId = userViewModel.Id;
+            var tweets = serviceT.GetByUser(userViewModel.Id);
+            return View(new ProfileViewModel { Tweets = tweets });
+        }
+
+
 
         public IActionResult Login()
         {
@@ -230,7 +313,7 @@ namespace Twitter.Controllers
                 if (generatedToken != null)
                 {
                     HttpContext.Session.SetString("Token", generatedToken);
-                    return RedirectToAction("Index", validUser);
+                    return RedirectToAction("Profile", validUser);
                 }
                 else
                 {
@@ -271,6 +354,14 @@ namespace Twitter.Controllers
             return View();
         }
 
+        public IActionResult Like(int id)
+        {
+            serviceT.Like(id);
+            return (RedirectToAction("Index"));
+        }
+
+      
+
         [HttpPost]
         public IActionResult Upload(IFormFile file)
         {
@@ -287,6 +378,12 @@ namespace Twitter.Controllers
 
                 var token = HttpContext.Session.GetString("Token");
                 var id = tokenService.GetJWTTokenClaim(token);
+
+                var user = serviceU.GetById(Convert.ToInt32(id));
+                var userViewModel = new UserViewModel { Handle = user.Handle, Id = user.Id, Name = user.Name, Email = user.Email, Avatar = user.Avatar };
+
+                userViewModel.Avatar = fileName;
+                // user.Avatar = fileName
 
                 serviceU.UpdateImage(int.Parse(id), fileName);
 

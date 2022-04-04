@@ -93,6 +93,42 @@ namespace Twitter.Service
             }
         }
 
+        public Tweet Like(int Id)
+        {
+            //tweet.User.Id !== jwt.id
+            //return error
+            var tweetToUpdate = context.Tweets.Find(Id);
+            if (tweetToUpdate is null)
+            {
+                throw new NullReferenceException("Tweet does not exist");
+            }
+            else
+            {               
+                tweetToUpdate.Likes++;
+                
+                context.SaveChanges();
+                return tweetToUpdate;
+            }
+        }
+
+        public Tweet Comment(TweetViewModel model)
+        {
+            //tweet.User.Id !== jwt.id
+            //return error
+            var tweetToComment = context.Tweets.Find(model.Id);
+            if (tweetToComment is null)
+            {
+                throw new NullReferenceException("Tweet does not exist");
+            }
+            else
+            {
+                tweetToComment.Comments = model.Comment;
+
+                context.SaveChanges();
+                return tweetToComment;
+            }
+        }
+
         public Tweet Update(TweetEditModel tweet)
         {
             var tweetToUpdate = context.Tweets.Find(tweet.Id);
@@ -122,12 +158,6 @@ namespace Twitter.Service
             tweetToUpdate.User = userToUpdate;
 
             context.SaveChanges();
-        }
-
-
-        public Tweet LikeUpdateByUser(User user)
-        {
-            throw new NotImplementedException();
         }
     }
 }

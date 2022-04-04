@@ -20,10 +20,7 @@ namespace Twitter.Service
 
         public abstract User UpdateImage(int Id, string fileName);
 
-        public abstract void LikeNewLikeByHandle(string Handle); //Create a Like
-        public abstract void LikeGetLikingUsersByHandle(string Handle); //View number of Likes
-        //public abstract User LikeGetLinkingUsersByHandle(string Handle);
-        public abstract void LikeUnlikeByHandle(string Handle); //Remove a previous Like
+        //public abstract void UpdatePublisher(string isbn, int publisherId);
 
     }
 }
